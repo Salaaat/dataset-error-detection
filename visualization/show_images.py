@@ -33,6 +33,7 @@ def display_images(loaded_images, number_of_images):
 
     plt.show()
 
+
 if __name__ == '__main__':
     nms = ['ILSVRC2012_val_00000921.JPEG', 'ILSVRC2012_val_00002207.JPEG', 'ILSVRC2012_val_00009208.JPEG']
     img_scr_path = "/media/salat/disk/imagenet/val/n01496331"
