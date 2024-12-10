@@ -1,5 +1,3 @@
-from unicodedata import digit
-
 import matplotlib.pyplot as plt
 from PIL import Image
 
@@ -19,23 +17,39 @@ def load_images(names, images_source_path):
 
     return images
 
-def display_images(loaded_images, number_of_images):
+def display_images(loaded_images, number_of_images: int = 1):
     width = 10
     height = 6
-    side_size = int(number_of_images**0.5 // 1)
-    columns = side_size
-    rows = side_size +1
+    max_ncols = 5
 
-    fig, axes = plt.subplots(columns, rows, figsize=(width, height))
+    if number_of_images <= 0:
+        nrows, ncols = 1, 1
+    elif number_of_images <= max_ncols:
+        ncols = number_of_images
+        nrows = 1
+    else:
+        ncols = max_ncols
+        nrows = number_of_images // max_ncols
 
-    for i in range(number_of_images):
-        axes[i].imshow(loaded_images[i])
+    if number_of_images % max_ncols and not number_of_images <= max_ncols:
+        nrows += 1
+
+    fig, axes = plt.subplots(nrows, ncols, figsize=(width, height))
+
+    if nrows == 1 or ncols == 1:
+        for i in range(number_of_images):
+            axes[i].imshow(loaded_images[i])
+    elif nrows < 1 or ncols < 1:
+        print("Won't show 0 or less images/number_of_images must be integer.")
+        exit()
+    else:
+        pass
 
     plt.show()
 
 
 if __name__ == '__main__':
-    nms = ['ILSVRC2012_val_00000921.JPEG', 'ILSVRC2012_val_00002207.JPEG', 'ILSVRC2012_val_00009208.JPEG']
+    nms = ['ILSVRC2012_val_00002207.JPEG', 'ILSVRC2012_val_00009208.JPEG', 'ILSVRC2012_val_00000921.JPEG', 'ILSVRC2012_val_00008963.JPEG', 'ILSVRC2012_val_00014741.JPEG', 'ILSVRC2012_val_00017196.JPEG']
     img_scr_path = "/media/salat/disk/imagenet/val/n01496331"
     loaded = load_images(nms, img_scr_path)
-    display_images(loaded, 2)
+    display_images(loaded, 9)
