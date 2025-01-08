@@ -6,33 +6,22 @@ files = ["efficientnet_l2.csv", "efficientnetv2.csv", "openclip_mod_v2_class_nam
 group1 = ["efficientnet_l2.csv", "efficientnetv2.csv"] #Empty DataFrame, but why
 group2 = ["openclip_mod_v2_class_names_on_val.csv", "test_5nn.csv"]
 
-def choose_file():
-    return group2[randint(0, 1)]
+def choose_file(file_number):
+    file_dictionary = None
+    if file_number == 0 or 1:
+        file_dictionary = ["img_id", "original_id", "original_label", "top_1_pred", "top_1_prob", "top_2_pred", "top_2_prob", "top_3_pred", "top_3_prob", "top_4_pred", "top_4_prob", "top_5_pred", "top_5_prob"]
+    if file_number == 2:
+        file_dictionary = ["img_id", "original_label", None, "top_1_pred", "top_1_prob", "top_2_pred", "top_2_prob", "top_3_pred", "top_3_prob", "top_4_pred", "top_4_prob", "top_5_pred", "top_5_prob"]
+    if file_number == 3:
+        file_dictionary = ["img_id", "original_label", None, "top_1_pred", "top_1_prob"]
+    return files[file_number], file_dictionary
+
+def load_table(confidence_file_name):
+    table = pd.read_csv(f"/home//salat/PycharmProjects/dataset-error-detection/confidences/{confidence_file_name}")
+    return table
 
 def choose_class():
     return randint(0, 999)
 
-def load_table(confidence_file_name):
-    return pd.read_csv(f"/home//salat/PycharmProjects/dataset-error-detection/confidences/{confidence_file_name}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    file_name = choose_file()
-    table = load_table(file_name)
-    class_num = choose_class()
-    print(f"Chosen class: {class_num}")
-    print(f"Chosen file: {file_name}")
-    print(table.query(f'original_label == {class_num}'))
+def load_small_table(chosen_class):
+    pass

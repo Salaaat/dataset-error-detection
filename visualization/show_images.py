@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
+import numpy as np
 from PIL import Image
+import evalueter as ev
 
 def show_images(images_source_path, information_source_path, number_of_images):
     pass
     #get list of names out of information source
+    ev.find(None)
     #get list of information for each picture
     #loaded_images = load_images(names, images_source_path)
     #dislplay_images(loaded_images, number_of_images)
@@ -61,7 +64,11 @@ def display_images(loaded_images, number_of_images: int = 1):
 
 
 if __name__ == '__main__':
-    nms = ['ILSVRC2012_val_00002207.JPEG', 'ILSVRC2012_val_00009208.JPEG', 'ILSVRC2012_val_00000921.JPEG', 'ILSVRC2012_val_00008963.JPEG', 'ILSVRC2012_val_00014741.JPEG', 'ILSVRC2012_val_00017196.JPEG']
-    img_scr_path = "/media/salat/disk/imagenet/val/n01496331"
-    loaded = load_images(nms, img_scr_path)
-    display_images(loaded, 7)
+    #nms = ['ILSVRC2012_val_00002207.JPEG', 'ILSVRC2012_val_00009208.JPEG', 'ILSVRC2012_val_00000921.JPEG', 'ILSVRC2012_val_00008963.JPEG', 'ILSVRC2012_val_00014741.JPEG', 'ILSVRC2012_val_00017196.JPEG'] #n01496331
+    #rnd_img = np.random.randint(0, 256, (50, 50))
+    nms = ev.find(None)
+    #nms_np = [rnd_img for i in range(10)]
+    img_src_path = "/media/salat/disk/imagenet/val/n02099712"
+    img_src_path_np = None
+    loaded = load_images(nms, img_src_path)
+    display_images(loaded, 2)
