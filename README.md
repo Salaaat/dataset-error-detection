@@ -1,2 +1,6 @@
-# dataset-error-detection
-Maturitní práce z předmětu informatika na Gymnáziu Jana Keplera studentky Šárky Morávkové 
+# Dataset error detection
+Final exam from Informatics 
+
+## Folders
+### confidences & loader
+credit: https://github.com/klarajanouskova/ImageNet
