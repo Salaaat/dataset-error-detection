@@ -1,6 +1,4 @@
-from random import randint
-import pandas as pd         #for reading csv files
-
+import pandas as pd
 table = None
 files = ["efficientnet_l2.csv", "efficientnetv2.csv", "openclip_mod_v2_class_names_on_val.csv", "test_5nn.csv"]
 group1 = ["efficientnet_l2.csv", "efficientnetv2.csv"] #Empty DataFrame, but why
@@ -17,11 +15,5 @@ def choose_file(file_number):
     return files[file_number], file_dictionary
 
 def load_table(confidence_file_name):
-    table = pd.read_csv(f"/home//salat/PycharmProjects/dataset-error-detection/confidences/{confidence_file_name}")
-    return table
-
-def choose_class():
-    return randint(0, 999)
-
-def load_small_table(chosen_class):
-    pass
+    info_table = pd.read_csv(f"/home//salat/PycharmProjects/dataset-error-detection/confidences/{confidence_file_name}")
+    return info_table
