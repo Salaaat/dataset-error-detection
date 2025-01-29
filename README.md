@@ -3,7 +3,7 @@ Final exam from Informatics
 
 ## Folders
 ### confidences & loader
-credit: https://github.com/klarajanouskova/ImageNet
+credit: https://github.com/klarajanouskova
 
 ### visualization
 - *confidence_file_reader.py* reads the selected file with confidences and creates a list with names of all columns contained in the .csv file.
