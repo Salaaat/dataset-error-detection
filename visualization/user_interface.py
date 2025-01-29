@@ -17,7 +17,8 @@ def run():
                 chosen_class = randint(0, 999)
             else:
                 chosen_class = int(class_input)
-            print(f"Zvolená třída: {chosen_class},", class_dictionary.get_class_name(chosen_class))
+            class_name = class_dictionary.get_class_name(chosen_class)
+            print(f"Zvolená třída: {chosen_class},", class_name)
         except Exception as e:
             print(f"An error occurred: {e}")
 
@@ -31,9 +32,12 @@ def run():
         except Exception as e:
             print(f"An error occurred: {e}")
 
+        if not num_of_images:
+            num_of_images = 50 #všechny chybné ve validační sadě
+
     label_class_table = pd.read_csv("../loader/imagenet2012_classes_label_match.csv")
     class_directory = label_class_table.query(f'original_id == {chosen_class}')
-    image_displayer.show_images("/media/salat/disk/imagenet/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, None)
+    image_displayer.show_images("/media/salat/disk/imagenet/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name)
 
 while True:
     run()
