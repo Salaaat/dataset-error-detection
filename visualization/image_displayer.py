@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from PIL import Image
-import evalueter as ev
+import evaluater as ev
 
 
 def show_images(images_source_path, number_of_images, class_num, class_name):
