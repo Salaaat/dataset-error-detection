@@ -16,6 +16,23 @@ def find_first_method_results(class_num):
         print(chosen_class_table)
     return chosen_class_table
 
+def is_image_correctly_labeled(image_true_class, class_number, label_type):
+    if label_type == "basic":
+        if image_true_class == class_number:
+            return True
+        else:
+            return False
+    elif label_type == "multilabel":
+        if class_number in image_true_class:
+            return True
+        else:
+            return False
+    elif image_true_class == "custom":
+        return False
+    else:
+        return False
+    # what to do with uncertain pictures
+
 def evaluate_data(class_num, method_results):
     corrected_classes = [72, 73, 74, 77, 815, 76, 75]
     if class_num not in corrected_classes:
@@ -24,76 +41,44 @@ def evaluate_data(class_num, method_results):
     with open("../corrected_labels/corrected_labels_val_72_73_74_77_815_76_75.json", "r") as file:
         corrected = json.load(file)
 
-    correct = 0 #
+    correct = 0
     wrong = 0
     for image, value in corrected.items():
         if value["old_label"] != class_num:
             continue
-        if value["new_label"] == class_num:
+        img_true_class = value["new_label"]
+        img_type = corrected[image]["label_type"]
+
+        if is_image_correctly_labeled(img_true_class, class_num, img_type):
             correct += 1
-            continue
-        try:
-            if class_num in value["new_label"]:
-                correct += 1
-            else:
-                wrong += 1
-        except Exception as e:
-            pass
+        else:
+            wrong += 1
 
     true_positives = 0 #skutečně chybné
-    false_positives = 0 #špatně oznacené jako chybné
+    false_positives = 0 #špatně označené jako chybné
     true_negatives = 0 #správně určené jako nechybné
     false_negatives = 0 #špatně určené jako nechybné
 
     for img in method_results[file_dict[0]]:
-        """try:
-            new_label = corrected[img]["new_label"]  # Extract value once
+        img_true_class = corrected[img]["new_label"]
+        img_type = corrected[img]["label_type"]
 
-            if isinstance(new_label, list):  # Handle list case
-                if class_num in new_label:
-                    true_negatives += 1
-                else:
-                    false_negatives += 1
-            else:  # Handle number case
-                if new_label == class_num:
-                    true_negatives += 1
-                else:
-                    false_negatives += 1
-
-        except KeyError:
-            print(f"Warning: Image {img} not found in corrected labels.")"""
-        '''
-        new_label = corrected[img]["new_label"]
-        print(type([new_label]))
-        if not type(new_label) == "list":
-            new_label = [new_label]
-        if class_num in new_label:
-            true_negatives += 1
+        if is_image_correctly_labeled(img_true_class, class_num, img_type):
+            false_positives += 1
         else:
-            false_negatives += 1'''
-
-        if corrected[img]["new_label"] == class_num:
-            true_negatives += 1
-            continue
-        try:
-            if class_num in corrected[img]["new_label"]:
-                true_negatives += 1
-            else:
-                false_negatives += 1
-        except Exception as e:
-            pass
+            true_positives += 1
 
     found_as_wrong = len(method_results[file_dict[0]]) #celkem označených jako chybné
-    true_positives = wrong - false_negatives
-    false_positives = correct - true_negatives
+    false_negatives = wrong - true_positives
+    true_negatives = correct - false_positives
 
-    if true_positives + false_negatives == 0:
+    if (true_positives + false_negatives) == 0:
         sensitivity = 100
     else:
         sensitivity = 100 * true_positives / (true_positives + false_negatives)
         sensitivity = int(sensitivity - (sensitivity % 1))
-    if true_negatives == 0:
-        specificity = 0
+    if (true_negatives + false_positives) == 0:
+        specificity = 100
     else:
         specificity = 100 * true_negatives / (true_negatives + false_positives)
         specificity = int(specificity - (specificity % 1))
@@ -122,7 +107,7 @@ def evaluate_data(class_num, method_results):
 
 
 if __name__ == "__main__":
-    class_num = 74
+    class_num = 75
     method_results = find_first_method_results(class_num)
     print (method_results)
     evaluate_data(class_num, method_results)
