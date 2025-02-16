@@ -1,0 +1,45 @@
+zadani
+    ImageNet-1k je jeden z nejpoužívanějších datasetů v oblasti počítačového vidění.
+    Byl vydán v roce 2012 a obsahuje trénovací (1 281 167 obrázků),
+    validační (50 000 obrázků) a testovací sadu (100 000 obrázků).
+
+    Cílem práce je navrhnout algoritmus pro detekci chyb v datasetu ImageNet-1k.
+    Jednou z možností je využití predikcí modelu naučeného na jiné trénovací sadě.
+    Kvalita navrženého algoritmu bude vyhodnocena na malé množině dat označené pečlivým anotátorem.
+
+dokumentace
+- co proc pouzivam
+-- knihovny
+--- pandas
+    snadny pristup k csv
+--- matplotlib
+    zobrazeni obrazku
+--- json
+    cteni dat ve formatu json
+
+--- randint
+    pro nerozhodne uzivatele
+
+- schema jak to funguje
+
+- jak to spustit pocinaje instalaci, knihovny, co potrebuju
+(pojede podle toho, kdyz neco vynecham, -nefunguje)
+
+vyhodnoceni
+- vyhodnocuji podle dat opravenych anotatorem, ktery si vse peclive vyhledaval
+- basic, multilabel, custom, uncertain
+-- basic
+    v obrazku se nachazi zastupce/i pouze jedne trdy z ImageNet1k
+    (spatne/spravne umisten ve val)
+-- multilabel
+    v obrazku se nachazi zastupci ruznych trid (napr. pavouk a povucina) z IN1k
+    1. metoda tudiz vyhodnotila obrazek tak, ze patri pouze do viditelnejsi z trid
+    (spravne pokud mezi labely je puvodni)
+-- cutom
+    v obrazku je zastupce tridy, ktera neni v ImageNetu1k
+    (obrazek tedy nutne musi byt zarazen spatne)
+-- uncertain
+    z obrazku neni jiste, zda se v nem nachazi zastupci nekterych trid, pripadne kterych presne
+    (spravny? co kdyz zrovna tato trida je nejpravdepodobnejsi tridou vyskkytujici se v obrazku
+     spatny? protoze pokud neni presne zaraditelny, nemel by patrit do zadne z trid)
+

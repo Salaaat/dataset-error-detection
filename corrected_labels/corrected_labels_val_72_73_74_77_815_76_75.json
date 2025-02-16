@@ -1,0 +1,2618 @@
+{
+  "ILSVRC2012_val_00001037.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00001053.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00001370.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00001618.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00002041.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00003008.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004118.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004140.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004151.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00006165.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00008805.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00008960.JPEG": {
+    "old_label": 72,
+    "new_label": 72,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00009854.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011053.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011721.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00015141.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00016993.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00020108.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00020574.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00020726.JPEG": {
+    "old_label": 72,
+    "new_label": 72,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00022156.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00022618.JPEG": {
+    "old_label": 72,
+    "new_label": null,
+    "detailed_labels": "or crab running spider",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "77": "wolf spider, hunting spider"
+    }
+  },
+  "ILSVRC2012_val_00023385.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00024404.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00024685.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00024769.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00025040.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00025831.JPEG": {
+    "old_label": 72,
+    "new_label": 72,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00026006.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00026786.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00027376.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00028445.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00029030.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00030896.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00032657.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00033616.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00033987.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00035039.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00035451.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00035981.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00036407.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00038770.JPEG": {
+    "old_label": 72,
+    "new_label": null,
+    "detailed_labels": "Aculepeira ceropegia (female)",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00039799.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00040241.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00040520.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00042786.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00043063.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00047194.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00047923.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00048913.JPEG": {
+    "old_label": 72,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00002688.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "or some other Araneus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "73": "barn spider, Araneus cavaticus",
+      "74": "garden spider, Aranea diademata"
+    }
+  },
+  "ILSVRC2012_val_00003431.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004271.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004335.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00007224.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "or Araneus diadematus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00007882.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Eratigena agrestis",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00008316.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Araneus trifolium or Araneus quadratus",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00008352.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "There is also Neoscona arabesca",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00009216.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00009558.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "or Araneus diadematus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011638.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "or Araneus cavaticus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011677.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "73": "barn spider, Araneus cavaticus",
+      "74": "garden spider, Aranea diademata"
+    }
+  },
+  "ILSVRC2012_val_00011808.JPEG": {
+    "old_label": 73,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00011853.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is probably Araneus quadratus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00012895.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is probably Neoscona arabesca",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00013797.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is probably from family Selenopidae",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00014359.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "Might not be a black widow - strange green markings",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00015065.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "The spider is uncertain - maybe Araneus cavaticus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00015506.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Dolomedes tenebrosus",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00018347.JPEG": {
+    "old_label": 73,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019042.JPEG": {
+    "old_label": 73,
+    "new_label": 74,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019972.JPEG": {
+    "old_label": 73,
+    "new_label": 73,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019989.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00022957.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00023692.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00023989.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Misumena vatia",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00024056.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "huntsman spider or one from family Selenopidae",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00025818.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is probably Eriophora transmarina",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00026542.JPEG": {
+    "old_label": 73,
+    "new_label": 74,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028677.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "or Aranues diadematus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00029174.JPEG": {
+    "old_label": 73,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00029496.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00029903.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "or Larinioides sclopetarius",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00030120.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is Trichonephila clavipes",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00031117.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "(or Araneus diadematus)",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00033819.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00034665.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is probably Aranues bicentenarius",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00034773.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00035063.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Phidippus audax",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00035171.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00037282.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00038493.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00039025.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "The spider is uncertain - Aranues diadematus?",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00039159.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00040121.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00040800.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Metellina segmentata",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00041612.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Dolomedes tenebrosus",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00043771.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Eriophora",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00046074.JPEG": {
+    "old_label": 73,
+    "new_label": null,
+    "detailed_labels": "Araneus gemma or Araneus angulatus",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00048990.JPEG": {
+    "old_label": 73,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00000040.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00000395.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "or other Araneus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "73": "barn spider, Araneus cavaticus",
+      "74": "garden spider, Aranea diademata"
+    }
+  },
+  "ILSVRC2012_val_00001493.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00001987.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00003182.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00003353.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004110.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00005544.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00007672.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "Araneus cucurbitina",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00007677.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00009108.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011328.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00011379.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "The spider is probably Argiope trifasciata",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00012707.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00014498.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "Trichonephila edulis (really not sure)",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00015011.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00015751.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00015795.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "The spider is uncertain - weird angle of Araneus diadematus?",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00016083.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00018439.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "The spider is Trichonephila clavipes",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00019030.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00019734.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00019968.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00020991.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00022895.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00023301.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00023464.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00025556.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00026030.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00026600.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00027158.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00027161.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "or the spider might be Araneus angulatus",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00028779.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00029756.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00033225.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00034273.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00034972.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "The spider could be Argiope versicolor, modesta or bruennichi",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00035153.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00035593.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00036109.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "or other Araneus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "74": "garden spider, Aranea diademata"
+    }
+  },
+  "ILSVRC2012_val_00037727.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00038272.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00039370.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00043600.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "The spider is Eriophora transmarina",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00043646.JPEG": {
+    "old_label": 74,
+    "new_label": null,
+    "detailed_labels": "Misumena spinifera",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00046384.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00046931.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00047551.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00048714.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00049478.JPEG": {
+    "old_label": 74,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "Weird colour - either white version of Argiope aurantia or Argiope brunnichi?",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00000218.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00000986.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00002074.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00004021.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00005290.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "huntsman spider",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00006378.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00008224.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00008820.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "or maybe Dolomedes",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "77": "wolf spider, hunting spider"
+    }
+  },
+  "ILSVRC2012_val_00010225.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Tegenaria ferruginea or atrica, Eratigena",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00010801.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00013310.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Eratigena atrica, huntsman spider",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00013617.JPEG": {
+    "old_label": 77,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00014540.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00014727.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Holconia murrayensis, Barylestis variatus",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00015835.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00016944.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00017277.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00017790.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00017986.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Pisaurina mira",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00019561.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00023244.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00024873.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00025335.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Metallina segmentata, some Araneus",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00025447.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Deinopidae",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00025518.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00026346.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "wandering spider",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00026848.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00026935.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028355.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Trichonephila clavipes",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00029156.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00029631.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00031053.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "wandering spider",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00031382.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00031976.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "The spider - Zygiella atrica or Labulla thoracica, ...",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00036589.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "or wandering spider",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "77": "wolf spider, hunting spider"
+    }
+  },
+  "ILSVRC2012_val_00036773.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "Tapinopa longidens",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00036980.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00037280.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "or Atrax",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "76": "tarantula"
+    }
+  },
+  "ILSVRC2012_val_00037348.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00037935.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039093.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039557.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039854.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039966.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00040214.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00042578.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00045310.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00046017.JPEG": {
+    "old_label": 77,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00048649.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "maybe Anyphaena accentuata?",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00049134.JPEG": {
+    "old_label": 77,
+    "new_label": null,
+    "detailed_labels": "The spider - Coelotes terrestris or Gnaphosa lucifuga??",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00002128.JPEG": {
+    "old_label": 815,
+    "new_label": null,
+    "detailed_labels": "The spider could be some Araneus?",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00005028.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00007259.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00008519.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00008546.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      73,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00009373.JPEG": {
+    "old_label": 815,
+    "new_label": null,
+    "detailed_labels": "The spider - Araneus diadematus? Other Araneus?",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00009763.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00009823.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00010811.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00011508.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00012305.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00012897.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00014968.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00018633.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00018751.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019295.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019618.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00019649.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00020733.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00020974.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00021471.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00023532.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00023544.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00026078.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028350.JPEG": {
+    "old_label": 815,
+    "new_label": null,
+    "detailed_labels": "plus Gasteracantha cancriformis",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00028709.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00029580.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00031773.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00033227.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00035058.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00035311.JPEG": {
+    "old_label": 815,
+    "new_label": null,
+    "detailed_labels": "The spider might be Argiope aurantia but weird colour",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00036086.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00036672.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00038200.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00038930.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039054.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039431.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00040081.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00040594.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00041309.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      77,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00042422.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00043164.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00045297.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00045648.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      74,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00045949.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00046667.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00046830.JPEG": {
+    "old_label": 815,
+    "new_label": [
+      72,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00048313.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00048690.JPEG": {
+    "old_label": 815,
+    "new_label": 815,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00049091.JPEG": {
+    "old_label": 815,
+    "new_label": null,
+    "detailed_labels": "broken glass?",
+    "label_type": "uncertain"
+  },
+  "ILSVRC2012_val_00000396.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00000934.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00001460.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00002855.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00003320.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00003838.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00005208.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00005326.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00006549.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00007601.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00007951.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00009462.JPEG": {
+    "old_label": 76,
+    "new_label": 77,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00010503.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00011712.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00014302.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00015579.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00015999.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00017541.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00018169.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00023425.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00024109.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00026492.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028317.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028614.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00029048.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00029147.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00030405.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00032091.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00032440.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00033930.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00034373.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00034406.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00035080.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00035994.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00036506.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00037576.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00037717.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039241.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00040775.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00041311.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00042346.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00042831.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00043172.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00044170.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00045733.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00047574.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00047854.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00048306.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00048505.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00049466.JPEG": {
+    "old_label": 76,
+    "new_label": 76,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00001150.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00001454.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00004163.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00004164.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "weird photo",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "75": "black widow, Latrodectus mactans"
+    }
+  },
+  "ILSVRC2012_val_00004295.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00006437.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00007201.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00008718.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00014659.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00016560.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00016936.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00017294.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "or Euryopis episinoides",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "75": "black widow, Latrodectus mactans"
+    }
+  },
+  "ILSVRC2012_val_00017558.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "The spider - family Araneidae?",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00017682.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Latrodectus hasselti",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00017909.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Latrodectus hasselti",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00019765.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00022205.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00022508.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00022942.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00023954.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00024261.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00024956.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00024962.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00025455.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00025508.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00028035.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00029029.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Steatoda grossa",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00029208.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00030333.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "or Euryopis episiniodes",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "75": "black widow, Latrodectus mactans"
+    }
+  },
+  "ILSVRC2012_val_00030684.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Hard to tell what is inside",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "712": "Petri dish"
+    }
+  },
+  "ILSVRC2012_val_00032261.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00032724.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00033546.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00033821.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00033912.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Probably Latrodectus hasselti",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00035651.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00038183.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Latrodectus hasselti",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00038283.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Latrodectus variolus",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00039231.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00039661.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Meta menardi",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00040995.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Latrodectus hesperus",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00041127.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Leiurus quinquestriatus",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00041385.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "Steatoda paykulliana",
+    "label_type": "custom"
+  },
+  "ILSVRC2012_val_00044676.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "The spider - Latrodectus hasselti or hesperus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00047122.JPEG": {
+    "old_label": 75,
+    "new_label": 75,
+    "detailed_labels": "",
+    "label_type": "basic"
+  },
+  "ILSVRC2012_val_00047948.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "The spider - Latrodectus variolus",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00048068.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "The spider - neoscona domiciliorum",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00048406.JPEG": {
+    "old_label": 75,
+    "new_label": null,
+    "detailed_labels": "The spider - Latrodectus hasselti",
+    "label_type": "uncertain",
+    "selected_classes": {
+      "815": "spider web, spider's web"
+    }
+  },
+  "ILSVRC2012_val_00048523.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  },
+  "ILSVRC2012_val_00049802.JPEG": {
+    "old_label": 75,
+    "new_label": [
+      75,
+      815
+    ],
+    "detailed_labels": "",
+    "label_type": "multilabel"
+  }
+}
