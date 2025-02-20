@@ -20,7 +20,8 @@ def show_images(images_source_path, number_of_images, class_num, class_name):
         #načte obrázky
         loaded_images = load_images(images_info, images_source_path, file_dictionary)
         #vytvoří popisky
-        titles = create_titles(images_info, [True, True, True, True, True], file_dictionary, number_of_images)
+        ############################################# file dict
+        titles = create_titles(images_info, ["id", "top_1_pred", "top_1_prob"], file_dictionary, number_of_images)
         #zobrazí obrázky
         display_images(loaded_images, titles, number_of_images, class_name)
         #zobrazí tabulku
@@ -51,15 +52,15 @@ def create_titles(images_info, requested_title, file_dict, number_of_images): #v
     title_parts = []
     line_names = []
 
+######################################################################################################################
     #podle requested_title se vybere ty atributy, které jsou požadovány k zobrazení
-    for idx, i in enumerate(requested_title):
+    for key in requested_title:
         try:
-            if i:
-                list_of_attributes = images_info[file_dict[idx]].tolist()
-                title_parts.append(list_of_attributes)
-                line_names.append(file_dict[idx])
+            list_of_attributes = images_info[file_dict[key]].tolist()
+            title_parts.append(list_of_attributes)
+            line_names.append(key)
         except KeyError as e:
-            print(f"Popisek nebude obsahovat {idx + 1}. prvek.") #predelat na slovnik 52, 46-49, 39, 19 a ev
+            print(f"Popisek nebude obsahovat {key}.") #predelat na slovnik 52, 46-49, 39, 19 a ev
 
     #všechny popisky poskládá z vybraných atributů
     for idx in range(number_of_images):
