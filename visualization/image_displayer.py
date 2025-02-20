@@ -4,24 +4,24 @@ import evaluater as ev
 import os
 
 
-def show_images(images_source_path, number_of_images, class_num, class_name):
+def show_images(images_source_path, number_of_images, class_num, class_name, chosen_model):
+    #načte data vybraného modelu
+    file_name, file_dict, info_table = ev.load_model(chosen_model)
     #získá obrázky mající na prvním místě jinou predikci jiné tříde než je jejich původní
-    images_info = ev.find_first_method_results(class_num)
-    #získá informace o pojmenování sloupců ve images_info obsahující výsledky modelu
-    file_dictionary = ev.file_dict
+    images_info = ev.find_first_method_results(class_num, file_dict, info_table)
     #sjednotí počet požadovaných obrázků s počtem nalezených
     if (number_of_images -1) < len(images_info):
         images_info = images_info[:number_of_images]
     else:
         number_of_images = len(images_info)
     #zobrazí tabulku
-    ev.evaluate_data(class_num, images_info)
+    ev.evaluate_data(class_num, images_info, file_dict)
     if os.path.exists(images_source_path):
         #načte obrázky
-        loaded_images = load_images(images_info, images_source_path, file_dictionary)
+        loaded_images = load_images(images_info, images_source_path, file_dict)
         #vytvoří popisky
         ############################################# file dict
-        titles = create_titles(images_info, ["id", "top_1_pred", "top_1_prob"], file_dictionary, number_of_images)
+        titles = create_titles(images_info, ["id", "top_1_pred", "top_1_prob"], file_dict, number_of_images)
         #zobrazí obrázky
         display_images(loaded_images, titles, number_of_images, class_name)
         #zobrazí tabulku

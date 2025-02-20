@@ -40,7 +40,7 @@ def run():
     while not chosen_model:
         try:
             chosen_model = int(input("Vyberte model jehož predikce využijeme; 1 pro efficientnet (supervised), 2 pro openclip (unsupervised):"))
-            if not chosen_model in (1, 2):
+            if not chosen_model in (0, 1, 2):
                 chosen_model = 2
         except Exception as e:
             print(f"Máme problém: {e}")
@@ -51,7 +51,7 @@ def run():
 
     label_class_table = pd.read_csv("../loader/imagenet2012_classes_label_match.csv")
     class_directory = label_class_table.query(f'original_id == {chosen_class}')
-    image_displayer.show_images("../imagenet-1k/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name)
+    image_displayer.show_images("../imagenet-1k/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name, chosen_model)
 
 while True:
     run()
