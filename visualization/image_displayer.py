@@ -1,6 +1,7 @@
-import matplotlib.pyplot as plt
+import matplotlib as plt #import matplotlib.pyplot as plt
 from PIL import Image
 import evaluater as ev
+import os
 
 
 def show_images(images_source_path, number_of_images, class_num, class_name):
@@ -13,12 +14,19 @@ def show_images(images_source_path, number_of_images, class_num, class_name):
         images_info = images_info[:number_of_images]
     else:
         number_of_images = len(images_info)
-    #načte obrázky
-    loaded_images = load_images(images_info, images_source_path, file_dictionary)
-    #vytvoří popisky
-    titles = create_titles(images_info, [True, True, True, True, True], file_dictionary, number_of_images)
-    #zobrazí obrázky
-    display_images(loaded_images, titles, number_of_images, class_name)
+    #zobrazí tabulku
+    ev.evaluate_data(class_num, images_info)
+    if os.path.exists(images_source_path):
+        #načte obrázky
+        loaded_images = load_images(images_info, images_source_path, file_dictionary)
+        #vytvoří popisky
+        titles = create_titles(images_info, [True, True, True, True, True], file_dictionary, number_of_images)
+        #zobrazí obrázky
+        display_images(loaded_images, titles, number_of_images, class_name)
+        #zobrazí tabulku
+        ev.evaluate_data(class_num, images_info)
+    else:
+        print(f"Složka {images_source_path} s obrázky z třídy {class_num, class_name} neexistuje.")
 
 def load_images(images_info, images_source_path, file_dict):
     images = []

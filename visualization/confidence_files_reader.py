@@ -17,5 +17,5 @@ def get_dictionary_for_file(file_number):
     return files[file_number], file_dictionary
 
 def load_table(confidence_file_name):
-    info_table = pd.read_csv(f"/home//salat/PycharmProjects/dataset-error-detection/confidences/{confidence_file_name}")
+    info_table = pd.read_csv(f"../confidences/{confidence_file_name}")
     return info_table

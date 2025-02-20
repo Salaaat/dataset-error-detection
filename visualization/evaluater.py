@@ -109,5 +109,4 @@ def evaluate_data(class_num, method_results):
 if __name__ == "__main__":
     class_num = 75
     method_results = find_first_method_results(class_num)
-    print (method_results)
     evaluate_data(class_num, method_results)
