@@ -7,7 +7,7 @@ info_table = cfr.load_table(file_name)
 print(f"Chosen file: {file_name}")
 
 def find_first_method_results(class_num):
-    wrong_images = info_table.query(f'top_1_pred != {file_dict[1]}')
+    wrong_images = info_table.query(f'top_1_pred != {file_dict["original_label"]}')
     chosen_class_table = wrong_images.query(f'original_label == {class_num}')
     print(chosen_class_table)
     if chosen_class_table.empty:
@@ -60,7 +60,7 @@ def evaluate_data(class_num, method_results):
     true_negatives = 0 #správně určené jako nechybné
     false_negatives = 0 #špatně určené jako nechybné
 
-    for img in method_results[file_dict[0]]:
+    for img in method_results[file_dict["id"]]:
         img_true_class = corrected[img]["new_label"]
         img_type = corrected[img]["label_type"]
 
@@ -69,7 +69,7 @@ def evaluate_data(class_num, method_results):
         else:
             true_positives += 1
 
-    found_as_wrong = len(method_results[file_dict[0]]) #celkem označených jako chybné
+    found_as_wrong = len(method_results[file_dict["id"]]) #celkem označených jako chybné
     false_negatives = wrong - true_positives
     true_negatives = correct - false_positives
 
