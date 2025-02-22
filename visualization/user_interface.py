@@ -39,7 +39,7 @@ def run():
 
     while not chosen_model:
         try:
-            chosen_model = int(input("Vyberte model jehož predikce využijeme; 1 pro efficientnet (supervised), 2 pro openclip (unsupervised):"))
+            chosen_model = int(input("Vyberte model jehož predikce využijeme; 0, 1 pro efficientnet (supervised), 2 pro openclip (unsupervised): "))
             if not chosen_model in (0, 1, 2):
                 chosen_model = 2
         except Exception as e:

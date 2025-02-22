@@ -8,9 +8,7 @@ def load_model(file_num):
 
 def find_first_method_results(class_num, file_dict, info_table):
     wrong_images = info_table.query(f"top_1_pred != {file_dict["original_label"]}")
-    print(wrong_images[file_dict["top_1_pred"]])
     chosen_class_table = wrong_images.query(f"original_label == {class_num}")
-    print(chosen_class_table)
     if chosen_class_table.empty:
         return chosen_class_table
     answer = input("Chcete zobrazit tabulku s obrázky, které splňují kritéria? (ano/ne) ").casefold()
@@ -105,10 +103,3 @@ def evaluate_data(class_num, method_results, file_dict):
     specificita = {specificity} %
 
 """)
-
-
-
-if __name__ == "__main__":
-    class_num = 75
-    method_results = find_first_method_results(class_num)
-    evaluate_data(class_num, method_results)
