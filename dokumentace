@@ -43,3 +43,27 @@ vyhodnoceni
     (spravny? co kdyz zrovna tato trida je nejpravdepodobnejsi tridou vyskkytujici se v obrazku
      spatny? protoze pokud neni presne zaraditelny, nemel by patrit do zadne z trid)
 
+
+requirements
+numpy~=1.26.4
+pandas~=2.2.2
+matplotlib~=3.8.4 #3.10
+pillow~=10.3.0 #??
+
+seaborn~=0.13.2
+statsmodels~=0.14.2
+venny4py
+plotly~=5.23.0
+scipy~=1.13.1
+torch~=2.3.1
+tqdm~=4.66.5
+timm~=0.9.16
+transformers~=4.38.2
+sacred~=0.8.2
+sentencepiece~=0.2.0
+fairscale~=0.4.1
+torchvision~=0.15.1
+modelscope~=1.17.0
+opencv-python~=4.10.0.84
+scikit-learn~=1.5.1
+omegaconf~=2.3.0
