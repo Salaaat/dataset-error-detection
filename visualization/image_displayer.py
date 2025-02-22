@@ -1,37 +1,36 @@
-import matplotlib as plt #import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from PIL import Image
 import evaluater as ev
 import os
 
 
-def show_images(images_source_path, number_of_images, class_num, class_name):
+def show_images(images_source_path, number_of_images, class_num, class_name, chosen_model):
+    #načte data vybraného modelu
+    file_name, file_dict, info_table = ev.load_model(chosen_model)
     #získá obrázky mající na prvním místě jinou predikci jiné tříde než je jejich původní
-    images_info = ev.find_first_method_results(class_num)
-    #získá informace o pojmenování sloupců ve images_info obsahující výsledky modelu
-    file_dictionary = ev.file_dict
+    images_info = ev.find_first_method_results(class_num, file_dict, info_table)
     #sjednotí počet požadovaných obrázků s počtem nalezených
     if (number_of_images -1) < len(images_info):
         images_info = images_info[:number_of_images]
     else:
         number_of_images = len(images_info)
     #zobrazí tabulku
-    ev.evaluate_data(class_num, images_info)
+    ev.evaluate_data(class_num, images_info, file_dict)
     if os.path.exists(images_source_path):
         #načte obrázky
-        loaded_images = load_images(images_info, images_source_path, file_dictionary)
+        loaded_images = load_images(images_info, images_source_path, file_dict)
         #vytvoří popisky
-        titles = create_titles(images_info, [True, True, True, True, True], file_dictionary, number_of_images)
+        ############################################# file dict
+        titles = create_titles(images_info, ["id", "top_1_pred", "top_1_prob"], file_dict, number_of_images)
         #zobrazí obrázky
         display_images(loaded_images, titles, number_of_images, class_name)
-        #zobrazí tabulku
-        ev.evaluate_data(class_num, images_info)
     else:
         print(f"Složka {images_source_path} s obrázky z třídy {class_num, class_name} neexistuje.")
 
 def load_images(images_info, images_source_path, file_dict):
     images = []
     #vytvoří seznam názvů
-    names = images_info[file_dict[0]].tolist()
+    names = images_info[file_dict["id"]].tolist()
     #načte obrázky podle zadané cesty a názvů
     for name in names:
         image_path = f'{images_source_path}/{name}'
@@ -51,15 +50,15 @@ def create_titles(images_info, requested_title, file_dict, number_of_images): #v
     title_parts = []
     line_names = []
 
+######################################################################################################################
     #podle requested_title se vybere ty atributy, které jsou požadovány k zobrazení
-    for idx, i in enumerate(requested_title):
+    for key in requested_title:
         try:
-            if i:
-                list_of_attributes = images_info[file_dict[idx]].tolist()
-                title_parts.append(list_of_attributes)
-                line_names.append(file_dict[idx])
+            list_of_attributes = images_info[file_dict[key]].tolist()
+            title_parts.append(list_of_attributes)
+            line_names.append(key)
         except KeyError as e:
-            print(f"Popisek nebude obsahovat {idx + 1}. prvek.") #predelat na slovnik 52, 46-49, 39, 19 a ev
+            print(f"Popisek nebude obsahovat {key}.") #predelat na slovnik 52, 46-49, 39, 19 a ev
 
     #všechny popisky poskládá z vybraných atributů
     for idx in range(number_of_images):
@@ -101,7 +100,7 @@ def display_images(loaded_images, titles, number_of_images, class_name):
 
     #připraví okno
     fig, axes = plt.subplots(nrows, ncols, figsize=(width, height))
-    fig.subplots_adjust(left=0.05, right=0.95, top=0.85, bottom=0.05)
+    fig.subplots_adjust(left=0.05, right=0.95, top=0.85, bottom=0.05, hspace=0.5, wspace=0.3)
     fig.suptitle(class_name, fontsize=16)
 
     #podle množství obrázků je zobrazí

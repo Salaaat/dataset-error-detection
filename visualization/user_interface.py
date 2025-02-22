@@ -9,6 +9,7 @@ class_dictionary = ClassDictionary()
 def run():
     chosen_class = None
     num_of_images = None
+    chosen_model = None
 
     while not chosen_class:
         try:
@@ -34,10 +35,23 @@ def run():
 
         if not num_of_images:
             num_of_images = 50 #všechny chybné ve validační sadě
+            print("Zobrazí se tedy všechny chybné obrázky.")
+
+    while not chosen_model:
+        try:
+            chosen_model = int(input("Vyberte model jehož predikce využijeme; 0, 1 pro efficientnet (supervised), 2 pro openclip (unsupervised): "))
+            if not chosen_model in (0, 1, 2):
+                chosen_model = 2
+        except Exception as e:
+            print(f"Máme problém: {e}")
+
+        if not chosen_model:
+            chosen_model = 2
+            print("Použijeme tedy data openclip modelu.")
 
     label_class_table = pd.read_csv("../loader/imagenet2012_classes_label_match.csv")
     class_directory = label_class_table.query(f'original_id == {chosen_class}')
-    image_displayer.show_images("../imagenet-1k/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name)
+    image_displayer.show_images("../imagenet-1k/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name, chosen_model)
 
 while True:
     run()

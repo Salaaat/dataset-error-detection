@@ -1,14 +1,14 @@
 import confidence_files_reader as cfr
 import json
 
-file_num = 2  # randint(2, 3)
-file_name, file_dict = cfr.get_dictionary_for_file(file_num)
-info_table = cfr.load_table(file_name)
-print(f"Chosen file: {file_name}")
+def load_model(file_num):
+    file_name, file_dict = cfr.get_dictionary_for_file(file_num)
+    info_table = cfr.load_table(file_name)
+    return file_name, file_dict, info_table
 
-def find_first_method_results(class_num):
-    wrong_images = info_table.query(f'top_1_pred != {file_dict[1]}')
-    chosen_class_table = wrong_images.query(f'original_label == {class_num}')
+def find_first_method_results(class_num, file_dict, info_table):
+    wrong_images = info_table.query(f"top_1_pred != {file_dict["original_label"]}")
+    chosen_class_table = wrong_images.query(f"original_label == {class_num}")
     if chosen_class_table.empty:
         return chosen_class_table
     answer = input("Chcete zobrazit tabulku s obrázky, které splňují kritéria? (ano/ne) ").casefold()
@@ -33,8 +33,8 @@ def is_image_correctly_labeled(image_true_class, class_number, label_type):
         return False
     # what to do with uncertain pictures
 
-def evaluate_data(class_num, method_results):
-    corrected_classes = [72, 73, 74, 77, 815, 76, 75]
+def evaluate_data(class_num, method_results, file_dict):
+    corrected_classes = [72, 73, 74, 75, 76, 77, 815]
     if class_num not in corrected_classes:
         return print(f'Opravená data pro vyhodnocení této třídy nejsou k dispozici.\n Zkuste třídy {", ".join([str(i) for i in corrected_classes])}.')
 
@@ -59,7 +59,7 @@ def evaluate_data(class_num, method_results):
     true_negatives = 0 #správně určené jako nechybné
     false_negatives = 0 #špatně určené jako nechybné
 
-    for img in method_results[file_dict[0]]:
+    for img in method_results[file_dict["id"]]:
         img_true_class = corrected[img]["new_label"]
         img_type = corrected[img]["label_type"]
 
@@ -68,7 +68,7 @@ def evaluate_data(class_num, method_results):
         else:
             true_positives += 1
 
-    found_as_wrong = len(method_results[file_dict[0]]) #celkem označených jako chybné
+    found_as_wrong = len(method_results[file_dict["id"]]) #celkem označených jako chybné
     false_negatives = wrong - true_positives
     true_negatives = correct - false_positives
 
@@ -103,10 +103,3 @@ def evaluate_data(class_num, method_results):
     specificita = {specificity} %
 
 """)
-
-
-
-if __name__ == "__main__":
-    class_num = 75
-    method_results = find_first_method_results(class_num)
-    evaluate_data(class_num, method_results)
