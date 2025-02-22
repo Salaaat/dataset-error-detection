@@ -7,7 +7,7 @@ def load_model(file_num):
     return file_name, file_dict, info_table
 
 def find_first_method_results(class_num, file_dict, info_table):
-    wrong_images = info_table.query(f"top_1_pred != {file_dict["original_label"]}")
+    wrong_images = info_table.query(f'top_1_pred != {file_dict["original_label"]}')
     chosen_class_table = wrong_images.query(f"original_label == {class_num}")
     if chosen_class_table.empty:
         return chosen_class_table
