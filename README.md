@@ -1,15 +1,15 @@
 # Dataset error detection
-Final exam from Informatics 
+This is a project for a high school Informatics final exam 
 
 ## Folders
 ### confidences, corrected_labels & visualization\loader
-credit: https://github.com/klarajanouskova and her team
+> credit: https://github.com/klarajanouskova and her team
 
 ### confidences
-consists of two files with predictions of ImageNet-1k from EfficientNet and one from OpenCLIP
+> consists of two files with predictions of ImageNet-1k from EfficientNet and one from OpenCLIP
 
 ### corrected_labels
-a JSON file/s containing some class labels, carefully corrected by a human
+> a JSON file/s containing some class labels, carefully corrected by a human
 
 ### visualization
 - *confidence_file_reader.py* reads the selected file with confidences and creates a list with names of all columns contained in the .csv file.
