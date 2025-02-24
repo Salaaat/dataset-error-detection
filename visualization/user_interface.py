@@ -40,7 +40,7 @@ def run():
 
         if not num_of_images:
             num_of_images = 50 #všechny chybné ve validační sadě
-            print("Zobrazí se tedy všechny chybné obrázky.")
+            print("Zobrazí se všechny chybné obrázky.")
 
     while not chosen_model:
         try:

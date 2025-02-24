@@ -15,7 +15,7 @@ def show_images(images_source_path, number_of_images, class_num, class_name, cho
     else:
         number_of_images = len(images_info)
     #zobrazí tabulku
-    ev.evaluate_data(class_num, images_info, file_dict)
+    ev.evaluate_data(class_num, images_info, file_dict, file_name)
     if os.path.exists(images_source_path):
         #načte obrázky
         loaded_images = load_images(images_info, images_source_path, file_dict)
@@ -44,7 +44,7 @@ def load_images(images_info, images_source_path, file_dict):
     return images
 
 def create_titles(images_info, requested_title, file_dict, number_of_images): #vyresit jinak?
-    #requested_title je list True a False, kde každé pozice odpovídá pozici ve file_dict
+    #requested_title je class_group True a False, kde každé pozice odpovídá pozici ve file_dict
     #součástí popisku budou ty, ktere májí na své pozici True
     titles = []
     title_parts = []

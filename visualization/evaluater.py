@@ -3,6 +3,15 @@ import json
 import os
 import pandas as pd
 
+
+corrected_labels_files = ["corrected_labels_val_72_73_74_77_815_76_75.json",
+                          "corrected_labels_val_356_357_358_359.json"]
+corrected_labels_divided = [[72, 73, 74, 77, 815, 76, 75], [356, 357, 358, 359]]
+corrected_classes = []
+for class_group in corrected_labels_divided:
+    for num in class_group:
+        corrected_classes.append(num)
+
 def load_model(file_num):
     file_name, file_dict = cfr.get_dictionary_for_file(file_num)
     info_table = cfr.load_table(file_name)
@@ -59,12 +68,18 @@ def is_image_correctly_labeled(image_true_class, class_number, label_type):
         return False
     # what to do with uncertain pictures
 
-def evaluate_data(class_num_ed, method_results_ed, file_dict_ed):
-    corrected_classes = [72, 73, 74, 75, 76, 77, 815]
-    if class_num_ed not in corrected_classes:
-        return print(f'Opravená data pro vyhodnocení této třídy nejsou k dispozici.\n Zkuste třídy {", ".join([str(i) for i in corrected_classes])}.')
+def evaluate_data(class_num_ed, method_results_ed, file_dict_ed, file_name_ed):
 
-    with open("../corrected_labels/corrected_labels_val_72_73_74_77_815_76_75.json", "r") as file:
+    file = ''
+    for i in range(len(corrected_labels_files)):
+        if class_num_ed in corrected_labels_divided[i]:
+            file = corrected_labels_files[i]
+            break
+    if not file:
+        return print(
+                f'Opravená data pro vyhodnocení této třídy nejsou k dispozici.\n Zkuste třídy {", ".join([str(i) for i in corrected_classes])}.')
+
+    with open(f"../corrected_labels/{file}", "r") as file:
         corrected = json.load(file)
 
     correct = 0
@@ -110,7 +125,7 @@ def evaluate_data(class_num_ed, method_results_ed, file_dict_ed):
         specificity = int(specificity - (specificity % 1))
 
     new_results = {'class_num': class_num_ed, 'true_positives': true_positives, 'false_positives': false_positives, 'false_negatives': false_negatives, 'true_negatives': true_negatives, 'total': wrong + correct}
-    saving_data(class_num_ed, file_name, new_results)
+    saving_data(class_num_ed, file_name_ed, new_results)
 
     print(f"""
     Vyhodnocení pro třídu {class_num_ed}:
@@ -133,11 +148,63 @@ def evaluate_data(class_num_ed, method_results_ed, file_dict_ed):
 
     """)
 
+def evaluate_multiple(classes):
+    if not classes:
+        classes = corrected_classes
+    files_em = cfr.files
+    for model_num in range(len(files_em)):
+        file_name, file_dict, info_table = load_model(model_num)
+        file_name_ee = files_em[model_num]
+        for class_num_ee in classes:
+            method_results_ee = find_first_method_results(class_num_ee, file_dict, info_table)
+            evaluate_data(class_num_ee, method_results_ee, file_dict, file_name_ee)
+    count_everything()
 
+def count_everything():
+    files_ce = cfr.files
+    data_dicts = []
+    for model in files_ce:
+        with open(f"../resultes/{model.split('.')[0]}_results.csv", "r") as file:
+            df = pd.read_csv(file)
+            data_dict = df.to_dict()
+            data_dicts.append(data_dict)
+
+    all_data = {"efficientnet_l2": {}, "efficientnetv2": {}, "openclip": {}}
+    for idx, data in enumerate(data_dicts):
+        model = ["efficientnet_l2", "efficientnetv2", "openclip"][idx]
+        for key, list_of_values in data.items():
+            all_data[model][key] = int(sum(list_of_values.values()))
+        all_data[model]["sensitivity"] = 0
+        all_data[model]["specificity"] = 0
+
+    df = pd.DataFrame(all_data)
+
+    for model in files_ce:
+        model = model.split('.')[0]
+        true_positives = df.loc["true_positives", model]
+        false_positives = df.loc["false_positives", model]
+        false_negatives = df.loc["false_negatives", model]
+        true_negatives = df.loc["true_negatives", model]
+
+        if (true_positives + false_negatives) == 0:
+            sensitivity = 100
+        else:
+            sensitivity = 100 * true_positives / (true_positives + false_negatives)
+            sensitivity = int(sensitivity - (sensitivity % 1))
+        if (true_negatives + false_positives) == 0:
+            specificity = 100
+        else:
+            specificity = 100 * true_negatives / (true_negatives + false_positives)
+            specificity = int(specificity - (specificity % 1))
+        df.loc["sensitivity", model] = sensitivity
+        df.loc["specificity", model] = specificity
+    labels_pd = ['class_num', 'true_positives', 'false_positives', 'false_negatives', 'true_negatives', 'total', 'sensitivity', 'specificity']
+    df['value_name'] = labels_pd
+    print(df)
+    df.to_csv("../resultes/all_results.csv", index=False)
 
 if __name__ == "__main__":
-    file_number = 1
-    class_num = 80
-    file_name, file_dict, info_table = load_model(file_number)
-    method_results = find_first_method_results(class_num, file_dict, info_table)
-    evaluate_data(class_num, method_results, file_dict)
+    #evaluate_multiple([72, 73, 74, 77, 815, 76, 75]) # pavouci
+    #evaluate_multiple([356, 357, 358, 359]) # fretky, tchori, lasicky
+    evaluate_multiple([]) # vsechny opravene tridy
+    pass
