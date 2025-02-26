@@ -50,7 +50,6 @@ def create_titles(images_info, requested_title, file_dict, number_of_images): #v
     title_parts = []
     line_names = []
 
-######################################################################################################################
     #podle requested_title se vybere ty atributy, které jsou požadovány k zobrazení
     for key in requested_title:
         try:

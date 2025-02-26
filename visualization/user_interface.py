@@ -42,18 +42,18 @@ def run():
             num_of_images = 50 #všechny chybné ve validační sadě
             print("Zobrazí se všechny chybné obrázky.")
 
-    while not chosen_model:
+    while chosen_model == None:
         try:
             chosen_model = input("Vyberte model jehož predikce využijeme; 0, 1 pro efficientnet (supervised), 2 pro openclip (unsupervised): ")
             if chosen_model != '':
                 chosen_model = int()
-            if not chosen_model in (0, 1, 2):
+            if not (chosen_model in [0, 1, 2]):
                 chosen_model = 2
                 print("Použijeme tedy data openclip modelu.")
         except Exception as e:
             print(f"Vyskytl se problém: {e}")
 
-        if not chosen_model:
+        if chosen_model == None:
             chosen_model = 2
             print("Použijeme tedy data openclip modelu.")
 

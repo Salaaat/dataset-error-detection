@@ -18,14 +18,18 @@ def load_model(file_num):
     return file_name, file_dict, info_table
 
 def find_first_method_results(class_num, file_dict, info_table):
-    wrong_images = info_table.query(f'top_1_pred != {file_dict["original_label"]}')
-    chosen_class_table = wrong_images.query(f"original_label == {class_num}")
-    if chosen_class_table.empty:
-        return chosen_class_table
+    chosen_class_table = info_table[info_table[file_dict['original_label']] == class_num]
+    wrong_images = chosen_class_table[chosen_class_table[file_dict['top_1_pred']] != chosen_class_table[file_dict['original_label']]]
+
+    if wrong_images.empty:
+        return wrong_images
+
     answer = input("Chcete zobrazit tabulku s obrázky, které splňují kritéria? (ano/ne) ").casefold()
+
     if answer == "ano" or answer == "a" or answer == "yes" or answer == "y":
-        print(chosen_class_table)
-    return chosen_class_table
+        print(wrong_images)
+
+    return wrong_images
 
 def saving_data(class_num_sd, file_name_sd, new_row):
     model_name = file_name_sd.split(".")[0]
@@ -41,6 +45,14 @@ def saving_data(class_num_sd, file_name_sd, new_row):
         labels_pd = ['class_num', 'true_positives', 'false_positives', 'false_negatives', 'true_negatives', 'total']
         data = {key: [] for key in labels_pd}
         df = pd.DataFrame(data)
+        df = df.astype({
+            'class_num': 'int',
+            'true_positives': 'int',
+            'false_positives': 'int',
+            'false_negatives': 'int',
+            'true_negatives': 'int',
+            'total': 'int'
+        })
     else:
         df = pd.read_csv(save_file_path)
 
@@ -151,19 +163,23 @@ def evaluate_data(class_num_ed, method_results_ed, file_dict_ed, file_name_ed):
 def evaluate_multiple(classes):
     if not classes:
         classes = corrected_classes
+
+    for i in classes:
+        if i not in corrected_classes:
+            classes = corrected_classes
+            break
+
     files_em = cfr.files
+
     for model_num in range(len(files_em)):
         file_name, file_dict, info_table = load_model(model_num)
         file_name_ee = files_em[model_num]
         for class_num_ee in classes:
             method_results_ee = find_first_method_results(class_num_ee, file_dict, info_table)
             evaluate_data(class_num_ee, method_results_ee, file_dict, file_name_ee)
-    count_everything()
 
-def count_everything():
-    files_ce = cfr.files
     data_dicts = []
-    for model in files_ce:
+    for model in files_em:
         with open(f"../resultes/{model.split('.')[0]}_results.csv", "r") as file:
             df = pd.read_csv(file)
             data_dict = df.to_dict()
@@ -179,7 +195,7 @@ def count_everything():
 
     df = pd.DataFrame(all_data)
 
-    for model in files_ce:
+    for model in files_em:
         model = model.split('.')[0]
         true_positives = df.loc["true_positives", model]
         false_positives = df.loc["false_positives", model]
@@ -200,11 +216,11 @@ def count_everything():
         df.loc["specificity", model] = specificity
     labels_pd = ['class_num', 'true_positives', 'false_positives', 'false_negatives', 'true_negatives', 'total', 'sensitivity', 'specificity']
     df['value_name'] = labels_pd
-    print(df)
+    df = df[df['value_name'] != 'class_num']
     df.to_csv("../resultes/all_results.csv", index=False)
 
 if __name__ == "__main__":
-    #evaluate_multiple([72, 73, 74, 77, 815, 76, 75]) # pavouci
+    #evaluate_multiple([72, 73, 74, 75, 76, 77, 815]) # pavouci, pavucina
     #evaluate_multiple([356, 357, 358, 359]) # fretky, tchori, lasicky
     evaluate_multiple([]) # vsechny opravene tridy
     pass
