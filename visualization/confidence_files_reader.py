@@ -3,8 +3,6 @@ import pandas as pd
 pd.set_option('display.max_columns', None)
 table = None
 files = ["efficientnet_l2.csv", "efficientnetv2.csv", "openclip.csv"]
-group1 = ["efficientnet_l2.csv", "efficientnetv2.csv"]
-group2 = ["openclip.csv"]
 
 def get_dictionary_for_file(file_number):
     file_dictionary = {}

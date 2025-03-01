@@ -24,13 +24,16 @@ def find_first_method_results(class_num, file_dict, info_table):
     if wrong_images.empty:
         return wrong_images
 
-    answer = input("Chcete zobrazit tabulku s obrázky, které splňují kritéria? (ano/ne) ").casefold()
+    wrong_images = wrong_images.sort_values(by=file_dict['top_1_prob'], ascending=False)
+
+    answer = input("Chcete zobrazit tabulku s informacemi o obrázcích, které splňují kritéria? (ano/ne) ").casefold()
 
     if answer == "ano" or answer == "a" or answer == "yes" or answer == "y":
         print(wrong_images)
 
     return wrong_images
 
+# pro ukládání výsledků funkce evaluate_data
 def saving_data(class_num_sd, file_name_sd, new_row):
     model_name = file_name_sd.split(".")[0]
     dir_path = '../resultes'
@@ -56,13 +59,13 @@ def saving_data(class_num_sd, file_name_sd, new_row):
     else:
         df = pd.read_csv(save_file_path)
 
-    # copy, rewrite, resave
     if not df['class_num'].isin([class_num_sd]).any():
         df = df._append(new_row, ignore_index=True)
 
     df = df.sort_values(by=['class_num'])
     df.to_csv(save_file_path, index=False)
 
+# pro vyhodnocení jednoho obrázku ve funkci evaluate_data
 def is_image_correctly_labeled(image_true_class, class_number, label_type):
     if label_type == "basic":
         if image_true_class == class_number:
@@ -76,12 +79,10 @@ def is_image_correctly_labeled(image_true_class, class_number, label_type):
             return False
     elif image_true_class == "custom":
         return False
-    else:
+    else:               # vyhodnocení dat označených jako "uncertain"
         return False
-    # what to do with uncertain pictures
 
 def evaluate_data(class_num_ed, method_results_ed, file_dict_ed, file_name_ed):
-
     file = ''
     for i in range(len(corrected_labels_files)):
         if class_num_ed in corrected_labels_divided[i]:
@@ -109,8 +110,6 @@ def evaluate_data(class_num_ed, method_results_ed, file_dict_ed, file_name_ed):
 
     true_positives = 0 #skutečně chybné
     false_positives = 0 #špatně označené jako chybné
-    true_negatives = 0 #správně určené jako nechybné
-    false_negatives = 0 #špatně určené jako nechybné
 
     for img in method_results_ed[file_dict_ed["id"]]:
         img_true_class = corrected[img]["new_label"]
@@ -122,8 +121,8 @@ def evaluate_data(class_num_ed, method_results_ed, file_dict_ed, file_name_ed):
             true_positives += 1
 
     found_as_wrong = len(method_results_ed[file_dict_ed["id"]]) #celkem označených jako chybné
-    false_negatives = wrong - true_positives
-    true_negatives = correct - false_positives
+    false_negatives = wrong - true_positives                    #správně určené jako nechybné
+    true_negatives = correct - false_positives                  #špatně určené jako nechybné
 
     if (true_positives + false_negatives) == 0:
         sensitivity = 100
@@ -212,15 +211,24 @@ def evaluate_multiple(classes):
         else:
             specificity = 100 * true_negatives / (true_negatives + false_positives)
             specificity = int(specificity - (specificity % 1))
+        if (true_positives + false_positives) == 0:
+            precision = 100
+        else:
+            precision = 100 * true_positives / (true_positives + false_positives)
+            precision = int(precision - (precision % 1))
+
         df.loc["sensitivity", model] = sensitivity
         df.loc["specificity", model] = specificity
-    labels_pd = ['class_num', 'true_positives', 'false_positives', 'false_negatives', 'true_negatives', 'total', 'sensitivity', 'specificity']
+        df.loc["precision", model] = precision
+
+    labels_pd = ['class_num', 'true_positives', 'false_positives', 'false_negatives', 'true_negatives', 'total', 'sensitivity', 'specificity', 'precision']
     df['value_name'] = labels_pd
     df = df[df['value_name'] != 'class_num']
     df.to_csv("../resultes/all_results.csv", index=False)
 
 if __name__ == "__main__":
     #evaluate_multiple([72, 73, 74, 75, 76, 77, 815]) # pavouci, pavucina
-    #evaluate_multiple([356, 357, 358, 359]) # fretky, tchori, lasicky
-    evaluate_multiple([]) # vsechny opravene tridy
+    evaluate_multiple([72, 73, 74, 75, 76, 77]) # pavouci
+    #evaluate_multiple([356, 357, 358, 359]) # lasicovití
+    #evaluate_multiple([]) # všechny opravené třídy
     pass
