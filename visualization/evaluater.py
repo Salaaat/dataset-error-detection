@@ -36,7 +36,7 @@ def find_first_method_results(class_num, file_dict, info_table):
 # pro ukládání výsledků funkce evaluate_data
 def saving_data(class_num_sd, file_name_sd, new_row):
     model_name = file_name_sd.split(".")[0]
-    dir_path = '../resultes'
+    dir_path = '../results'
     save_file_path = f'{dir_path}/{model_name}_results.csv'
 
     # if not dir: create it
@@ -179,7 +179,7 @@ def evaluate_multiple(classes):
 
     data_dicts = []
     for model in files_em:
-        with open(f"../resultes/{model.split('.')[0]}_results.csv", "r") as file:
+        with open(f"../results/{model.split('.')[0]}_results.csv", "r") as file:
             df = pd.read_csv(file)
             data_dict = df.to_dict()
             data_dicts.append(data_dict)
