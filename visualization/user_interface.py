@@ -11,6 +11,7 @@ def run():
     num_of_images = None
     chosen_model = None
 
+    #uživatel zvolí třídu pro zobrazení
     while not chosen_class:
         try:
             class_input = input("\nNapište číslo třídy, kterou chcete zobrazit (0 - 999 nebo „náhodná“): ").casefold()
@@ -23,8 +24,7 @@ def run():
         except Exception as e:
             print(f"Vyskytl se problém: {e}")
 
-        #choose probability limit
-
+    #uživatel zvolí počet obrázků k zobrazení
     while not num_of_images:
         try:
             num_of_images = input("Kolik obrázků chcete zobrazit? ")
@@ -42,9 +42,10 @@ def run():
             num_of_images = 50 #všechny chybné ve validační sadě
             print("Zobrazí se všechny chybné obrázky.")
 
+    #uživatel zvolí model pro určení chybných obrázků
     while chosen_model == None:
         try:
-            chosen_model = input("Vyberte model jehož predikce využijeme; 0, 1 pro efficientnet (supervised), 2 pro openclip (unsupervised): ")
+            chosen_model = input("Vyberte model jehož predikce využijeme; \n0 pro EfficientNet Noisy Student (supervised)\n1 pro originální EfficientNet (supervised)\n2 pro openclip (unsupervised): ")
             if chosen_model != '':
                 chosen_model = int()
             if not (chosen_model in [0, 1, 2]):
@@ -57,8 +58,10 @@ def run():
             chosen_model = 2
             print("Použijeme tedy data openclip modelu.")
 
+    #určí název třídy
     label_class_table = pd.read_csv("loader/imagenet2012_classes_label_match.csv")
     class_directory = label_class_table.query(f'original_id == {chosen_class}')
+    #spustí funkci pro zobrazení obrázků a předá jí zvolené parametry
     image_displayer.show_images("../imagenet-1k/val/" + class_directory['pt_name'].values[0], num_of_images, chosen_class, class_name, chosen_model)
 
 while True:

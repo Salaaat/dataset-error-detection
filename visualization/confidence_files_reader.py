@@ -3,7 +3,7 @@ import pandas as pd
 pd.set_option('display.max_columns', None)
 table = None
 files = ["efficientnet_l2.csv", "efficientnetv2.csv", "openclip.csv"]
-
+#připraví slovník pro získání jednotlivých názvů proměnných
 def get_dictionary_for_file(file_number):
     file_dictionary = {}
     file_dict_prep = []
@@ -15,7 +15,7 @@ def get_dictionary_for_file(file_number):
     for idx, key in enumerate(keys):
         file_dictionary[key] = file_dict_prep[idx]
     return files[file_number], file_dictionary
-
+#načte tabulku s informacemi
 def load_table(confidence_file_name):
     info_table = pd.read_csv(f"../confidences/{confidence_file_name}")
     return info_table
