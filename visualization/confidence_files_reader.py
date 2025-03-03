@@ -2,7 +2,7 @@ import pandas as pd
 
 pd.set_option('display.max_columns', None)
 table = None
-files = ["efficientnet_l2.csv", "efficientnetv2.csv", "openclip.csv"]
+files = ["efficientnet_ns.csv", "efficientnet_org.csv", "openclip.csv"]
 #připraví slovník pro získání jednotlivých názvů proměnných
 def get_dictionary_for_file(file_number):
     file_dictionary = {}

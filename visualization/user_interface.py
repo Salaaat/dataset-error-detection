@@ -45,7 +45,7 @@ def run():
     #uživatel zvolí model pro určení chybných obrázků
     while chosen_model == None:
         try:
-            chosen_model = input("Vyberte model jehož predikce využijeme; \n0 pro EfficientNet Noisy Student (supervised)\n1 pro originální EfficientNet (supervised)\n2 pro openclip (unsupervised): ")
+            chosen_model = input("Vyberte model jehož predikce využijeme; \n0 pro EfficientNet Noisy Student (supervised)\n1 pro původní EfficientNet (supervised)\n2 pro openclip (unsupervised): ")
             if chosen_model != '':
                 chosen_model = int()
             if not (chosen_model in [0, 1, 2]):

@@ -190,7 +190,7 @@ def evaluate_multiple(classes):
             data_dict = df.to_dict()
             data_dicts.append(data_dict)
     #vytvoří tabulku s celkovými výsledky
-    model_names = ["efficientnet_l2", "efficientnetv2", "openclip"]
+    model_names = ["efficientnet_ns", "efficientnet_org", "openclip"]
     all_data = {name : {} for name in model_names}
     for idx, data in enumerate(data_dicts):
         model = model_names[idx]
