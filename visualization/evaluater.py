@@ -11,6 +11,7 @@ corrected_classes = []
 for class_group in corrected_labels_divided:
     for num in class_group:
         corrected_classes.append(num)
+corrected_classes.sort()
 
 #načte data modelu
 def load_model(file_num):
