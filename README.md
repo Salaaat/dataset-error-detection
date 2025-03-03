@@ -16,7 +16,7 @@ This is a project for a high school Informatics final exam
 
 ### imagenet-1k
 
-> folder for validation set data in ImageNet notation -> /val/...
+> folder for validation set data in ImageNet notation -> imagenet-1k/val/...
 
 ### visualization
 
