@@ -9,18 +9,21 @@ def show_images(images_source_path, number_of_images, class_num, class_name, cho
     file_name, file_dict, info_table = ev.load_model(chosen_model)
     #získá obrázky mající na prvním místě jinou predikci jiné tříde než je jejich původní
     images_info = ev.find_first_method_results(class_num, file_dict, info_table)
+
     #sjednotí počet požadovaných obrázků s počtem nalezených
     if (number_of_images -1) < len(images_info):
         images_info = images_info[:number_of_images]
     else:
         number_of_images = len(images_info)
-    #zobrazí tabulku
+
+    #zobrazí tabulku pro anotátorem označená data, pokud existují
     ev.evaluate_data(class_num, images_info, file_dict, file_name)
+
+    #zkontroluje existenci složky s obrázky
     if os.path.exists(images_source_path):
         #načte obrázky
         loaded_images = load_images(images_info, images_source_path, file_dict)
         #vytvoří popisky
-        ############################################# file dict
         titles = create_titles(images_info, ["id", "top_1_pred", "top_1_prob"], file_dict, number_of_images)
         #zobrazí obrázky
         display_images(loaded_images, titles, number_of_images, class_name)
@@ -44,7 +47,7 @@ def load_images(images_info, images_source_path, file_dict):
     return images
 
 def create_titles(images_info, requested_title, file_dict, number_of_images): #vyresit jinak?
-    #requested_title je class_group True a False, kde každé pozice odpovídá pozici ve file_dict
+    #requested_title je seznam True a False, kde každá pozice odpovídá pozici ve file_dict
     #součástí popisku budou ty, ktere májí na své pozici True
     titles = []
     title_parts = []
